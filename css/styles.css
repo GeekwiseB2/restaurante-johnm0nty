@@ -1,27 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700|Lobster|Playfair+Display:400,700);
+
 /*======= NAV =======*/
 
+.navbar {
+  position: absolute;
+  top:30px;
+  z-index: 30;
+  width:100%;
+}
 .navbar-default {
-  background-color:transparent;
-  border:none;
-  /*margin-bottom:-50px;*/
+  background-color: transparent;
+  border: none;
+  top: 0;
 }
-.restaurante-logo {
-  height:20px;
-  width:90px;
-  background-image:url(../img/name-01.png);
-  background-position:center;
-  background-size:cover;
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: rgba(0, 0, 0, .8);
+  color: #fff;
 }
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
+
 
 /*======= CAROUSEL =======*/
 
 .carousel .item {
   height:65vh;
 }
-.item img {
-  min-height:65vh;
+.carousel-bg {
+  width:100%;
 }
 .logo-background {
-  height:70px;
-  padding-top:20%;
+  height:43vh;
+  padding-bottom:12vh;
+}
+
+/*======= OUR STORY =======*/
+
+.story-div {
+  padding-top:80px;
+  padding-bottom:240px;
+}
+.story {
+  font-family:Lobster,cursive;
+  color:#F4512F;
+  font-size:72px;
+  text-shadow:1px 0px 2px #000;
+  margin-bottom:5px;
+}
+.story2 {
+  margin-top:0;
+  font-family:Raleway,sans-serif;
+  font-weight:700;
+}
+.story3 {
+  font-family:Raleway,sans-serif;
+  font-weight:400;
+  font-size:12px;
+}
+.story-text {
+  z-index:-1;
+  color:rgba(149,147,147,0.2);
+  position:absolute;
+  font-family:"Playfair Display";
+  font-weight:700;
+  font-size:150px;
+}
+
+/*======= FRESNO BEE =======*/
+
+.bee-div {
+  height:65vh;
+  background-image:url(../img/food_review.jpg);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+.bee-col {
+  background-color:rgba(0,0,0,0.5);
+  margin-top:120px;
+  border-radius:3px;
+}
+.bee {
+  font-family:Lobster,cursive;
+  color:#F4512F;
+  font-size:60px;
+  text-shadow:1px 0px 2px #000;
+}
+.bee2 {
+  color:#FFF;
+  font-family:Raleway;sans-serif;
+  font-weight:400;
+}
+
+/*======= MENU =======*/
+
+.menu-div {
+  height:85vh;
+  background-image:url(../img/black_linen.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+.menu {
+  margin-top:60px;
+  font-family:Lobster,cursive;
+  color:#FFF;
+  font-size:72px;
+}
+#menu-active {
+  
+}
+
+/*======= FOOTER =======*/
+
+.orange-bg {
+  background-color:#F8512F;
 }
